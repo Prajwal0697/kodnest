@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ignore other cloned repos
+kodnest/
+kodnest1/
+kodnest2/
+

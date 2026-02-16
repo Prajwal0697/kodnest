@@ -9,6 +9,8 @@ import SavedPage from './pages/SavedPage';
 import DigestPage from './pages/DigestPage';
 import ProofPage from './pages/ProofPage';
 import ShipPage from './pages/ShipPage';
+import Kodnest1Page from './features/kodnest1/Kodnest1Page';
+import Kodnest2Page from './features/kodnest2/Kodnest2Page';
 
 const ProtectedShipRoute: FC<{ children: ReactNode }> = ({ children }) => {
   const saved = localStorage.getItem('jobTrackerTestChecklist');
@@ -35,7 +37,9 @@ const App: FC = () => {
             <Route path="/saved" element={<SavedPage />} />
             <Route path="/digest" element={<DigestPage />} />
             <Route path="/settings" element={<SettingsPage />} />
-
+            {/* feature routes */}
+            <Route path="/project1/*" element={<Kodnest1Page />} />
+            <Route path="/project2/*" element={<Kodnest2Page />} />
             {/* New JT routes mapping */}
             <Route path="/jt/07-test" element={<ProofPage />} />
             <Route path="/proof" element={<Navigate to="/jt/07-test" replace />} />
