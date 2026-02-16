@@ -26,8 +26,8 @@ const Navigation: FC = () => {
 
     const navLinks = [
         { name: 'Dashboard', path: '/dashboard' },
-        { name: 'Project 1', path: '/project1' },
-        { name: 'Project 2', path: '/project2' },
+        { name: 'Placement Readiness', path: '/project1' },
+        { name: 'Resume Builder', path: '/project2' },
         { name: 'My Saved', path: '/saved' },
         { name: 'Daily Digest', path: '/digest' },
         { name: 'Preferences', path: '/settings' },
