@@ -34,15 +34,15 @@ const DashboardLayout = () => {
                     gap: 'var(--spacing-sm)'
                 }}>
                     <div style={{
-                        width: '32px',
-                        height: '32px',
+                        width: '36px',
+                        height: '36px',
                         backgroundColor: 'var(--color-primary)',
-                        borderRadius: '6px'
+                        borderRadius: '8px'
                     }}></div>
-                    <span style={{ fontWeight: 700, fontSize: '18px', color: 'var(--color-primary)' }}>Placement Prep</span>
+                    <span style={{ fontWeight: 700, fontSize: '20px', color: 'var(--color-primary)' }}>Placement Prep</span>
                 </div>
 
-                <nav style={{ flex: 1, padding: 'var(--spacing-md) 0' }}>
+                <nav style={{ flex: 1, padding: 'var(--spacing-md) 0', backgroundColor: 'var(--color-surface)' }}>
                     {navItems.map((item) => (
                         <NavLink
                             key={item.name}
@@ -55,7 +55,7 @@ const DashboardLayout = () => {
                                 padding: '12px var(--spacing-lg)',
                                 textDecoration: 'none',
                                 color: isActive ? 'var(--color-primary)' : 'var(--color-text-muted)',
-                                backgroundColor: isActive ? 'rgba(79, 70, 229, 0.08)' : 'transparent',
+                                backgroundColor: isActive ? 'rgba(92, 74, 199, 0.1)' : 'transparent',
                                 borderLeft: `3px solid ${isActive ? 'var(--color-primary)' : 'transparent'}`,
                                 fontWeight: isActive ? 600 : 400,
                                 transition: 'all 0.2s ease'
@@ -69,7 +69,7 @@ const DashboardLayout = () => {
             </aside>
 
             {/* Main Content Area */}
-            <div style={{ flex: 1, marginLeft: '260px', display: 'flex', flexDirection: 'column' }}>
+            <div style={{ flex: 1, marginLeft: '260px', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--color-bg)' }}>
                 {/* Header */}
                 <header style={{
                     height: '64px',
